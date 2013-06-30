@@ -24,8 +24,8 @@
           <div class="navbar navbar-inverse">
             <div class="navbar-inner">
               <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-              
-              <a class="brand" href="#home">Lowdown  |   Website Development</a>
+              <a class="hidden-desktop brand" href="/">Lowdown | Web Dev</a>
+              <a class="hidden-tablet hidden-phone brand" href="#home">Lowdown  |   Website Development</a>
               <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -39,13 +39,13 @@
                   <li class=""><a href="#team">Team</a></li>
                   <li class=""><a href="#contact">Contact</a></li>
                   <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-                  <li class="dropdown">
+                  <!-- <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="http://www.twitter.com/peterlowry">Twitter</a></li>
                       <li><a href="http://www.facebook.com/peter.lowry.31">Facebook</a></li>
                     </ul>
-                  </li>
+                  </li> -->
                 </ul>
               </div><!--/.nav-collapse -->
             </div><!-- /.navbar-inner -->
@@ -53,13 +53,14 @@
 
         </div> <!-- /.container -->
       </div><!-- /.navbar-wrapper -->
-    <div class="block white">
       <div class="container landing">
-        <h1 style="text-align:center;">Creative Website Development</h1><br>
-            <div class="macbook">
-              <div class="macbook-cover">
+        <h1 class="hidden-tablet hidden-phone" style="text-align:center;">Creative Website Development</h1><br>
+        <h2 class="hidden-desktop" style="text-align:left;">Creative Website Development</h2>
+
+            <div class="macbook" style="text-align:center;">
+              <div class="macbook-cover" style="text-align:center;">
               </div>
-              <div class="image-wrapper">
+              <div class="image-wrapper" style="text-align:center;">
                 <div id="macbook-carousel" class="carousel slide">
                   <!-- Carousel items -->
                   <div class="carousel-inner">
@@ -75,7 +76,6 @@
             </div>
           </div>
         </div>
-      </div>
 
         <div class="slogan">
           <h3>Contact me<a class="scroll" href="#contact"> below </a></h3>
@@ -125,14 +125,6 @@
           <hr>
           
           <div class="row">
-            <div class="span8 pull-right">
-              <div class="caption">
-                <h2><a href="http://www.lisaandaaron.com" alt="Lisa and Aaron Wedding Website">LisaandAaron.com</a></h2>
-              </div>
-              <br>
-              <p>A custom wedding website built for a special weekend spent with family and friends celebrating a joyous marriage. </p>
-              <p class="text-center"><a class="btn" href="http://www.lisaandaaron.com">Visit Site</a></p>
-            </div>
             <div class="span4 pull-left">
               <div class="iphone">
                 <div class="iphone-cover"></div>
@@ -150,6 +142,15 @@
                 <a class="carousel-control right" href="#iphone-carousel" data-slide="next"><img src="img/right.png" style="height:60px; width:70px;" style="height:60px; width:70px;"></a>
               </div>
             </div>
+            <div class="span8 pull-right">
+              <div class="caption">
+                <h2><a href="http://www.lisaandaaron.com" alt="Lisa and Aaron Wedding Website">LisaandAaron.com</a></h2>
+              </div>
+              <br>
+              <p>A custom wedding website built for a special weekend spent with family and friends celebrating a joyous marriage. </p>
+              <p class="text-center"><a class="btn" href="http://www.lisaandaaron.com">Visit Site</a></p>
+            </div>
+           
           </div>
 
           <div class="container">
