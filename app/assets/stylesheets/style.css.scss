@@ -303,8 +303,16 @@ form.contact textarea {
 /*---------------------------------------------------------*/
 .container.landing {
   margin: 165px auto 70px auto;
+  min-height:500px;
+  min-width:900px;
+
 }
+  .container.landing.h1 {
+  padding-top:75%;
+
+  }
   .landing .slogan {
+    padding-top:30%;
     color: #999;
   }
   
@@ -329,9 +337,7 @@ form.contact textarea {
 
     }
   /* colors */
-  .block.blue {
-    background-color: #15a7c6;
-  }
+
   .block.green {
     background-color: #9ed846;
   }
