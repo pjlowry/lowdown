@@ -557,8 +557,10 @@ form.contact textarea {
     }
       .portrait-wrapper .social-media img:hover {
       opacity: none;
-      -webkit-transition: .2s;
-      transition: .2s;
+      -o-transition: all .3s;
+      -moz-transition: all .3s;
+      -webkit-transition: all .3s;
+      -ms-transition: all .3s;
       height:60px;
       width:60px;
       }
