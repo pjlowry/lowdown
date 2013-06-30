@@ -38,3 +38,191 @@ i {
   height:50px;
   width:50px;
 }
+
+
+.portfolio_container {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.portfolio_container .portfolio {
+}
+.portfolio_container .portfolio .media_box figure a img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio .media_box .hover_effect {
+  top: 0;
+  left: 0;
+}
+.gallerychooser {
+  height: 44px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.gallerychooserList {
+  margin: 0;
+  width: 100%;
+}
+.gallerychooserList li {
+  float: left;
+  margin: 0;
+  list-style: none;
+  width: 20%;
+  text-align: center;
+  padding: 0;
+}
+.gallerychooserList li:hover {
+  border-top: 2px solid #B52650;
+}
+.gallerychooserList li a {
+  display: block;
+  padding: 11px 0;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.2s ease;
+}
+.gallerychooserList li.current {
+  border-top: 2px solid #B52650;
+}
+.portfolio_container .portfolio {
+  width: 20%;
+}
+.fullwidth {
+  display: block;
+  max-width: 100%;
+  min-width: 100%;
+}
+#gallery h3 {
+  margin-bottom: 20px;
+}
+.project-title {
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+.project-description {
+  color: #868991;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+.thumbLink {
+  display: block;
+  width: 100%;
+}
+.thumbImage {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.thumbImage img {
+  transition: all 0.7s ease-in-out;
+}
+.thumbImage .thumbText h3 {
+  color:white;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  font-size:25px;
+  border-bottom: 1px solid #fff;
+  transition: all 1s ease-in-out;
+}
+.thumbImage .thumbText p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+  transition: all 1s ease-in-out;
+}
+.thumbImage .thumbTextWrap {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding: 0 20px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: all 1s ease-in-out;
+}
+.ie8 .thumbImage .thumbTextWrap {
+  display: none;
+}
+.thumbImage .thumbTextWrap:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.5em; /* Adjusts for spacing */
+}
+.thumbText {
+  text-align: center;
+  transform: scale(0);
+  transition: all 0.7s ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+}
+.thumbImage:hover img {
+  opacity: 0.2;
+  transform: scale(10);
+}
+.thumbImage:hover .thumbTextWrap {
+  opacity: 1;
+}
+.ie8 .thumbImage:hover .thumbTextWrap {
+  display: block;
+}
+.thumbImage:hover .thumbText {
+  transform: scale(1);
+}
+.thumbLink {
+  background: center center no-repeat #fff;
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+  margin: 0 auto;
+  border: 1px solid #eee;
+}
+.thumbLink:hover {
+  opacity: 1;
+}
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+
+.isotope, .isotope .isotope-item {
+  transition-duration: 0.8s;
+}
+.isotope {
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+  transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  transition: none;
+}
