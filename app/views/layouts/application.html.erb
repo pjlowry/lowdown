@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lowdown · Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website design and development">
+    <meta name="author" content="Lowdown · Web Development">
+
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+</head>
+
+  <body data-spy="scroll" data-target=".navbar-wrapper" data-offset="70">
+
+      <!--                                Navbar                                  -->
+      <!-- ====================================================================== -->
+      <!-- Menu Items float left, on smaller devices turns into a dropdown button -->
+      <div id="home" class="navbar-wrapper affix-top" data-spy="affix" data-offset-top="40">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
+
+          <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+              <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+              
+              <a class="brand" href="#home">Lowdown  |   Website Development</a>
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+              <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                  <li class="active"><a href="#home">Home</a></li>
+                  <li class=""><a href="#work">Work</a></li>
+                  <li class=""><a href="#team">Team</a></li>
+                  <li class=""><a href="#contact">Contact</a></li>
+                  <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://www.twitter.com/peterlowry">Twitter</a></li>
+                      <li><a href="http://www.facebook.com/peter.lowry.31">Facebook</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div><!-- /.navbar-inner -->
+          </div><!-- /.navbar -->
+
+        </div> <!-- /.container -->
+      </div><!-- /.navbar-wrapper -->
+      <div class="container landing">
+        <h1>Creative Website Development</h1>
+        <div class="slogan">
+          <h3>Hi, Check out my <a class="scroll" href="#work">work</a> below</h3>
+        </div>
+      </div>
+    
+      <!--                              Portfolio                                 -->
+      <!-- ====================================================================== -->
+      <!-- Macbook Carousel, iPhone Carousel, Turns to single column on smaller   -->
+      <div id="work" class="block green">
+        <div class="container">
+          <h1><u>Our Work</u></h1>
+            <h3>Our sites are easy to use, creatively designed and often get delivered on-time and under budget.</h3><br><br>
+            <div class="row">
+
+            <div class="span4">
+              <div class="caption">
+                <h2><a href="http://www.coachatlas.com" alt="CoachAtlas.com">CoachAtlas.com</a></h2>
+              </div>
+            <br>
+            <p>"CoachAtlas" is a site designed for sports coaches. Coaches create profiles and players, teams and organizations can find and hire coaches online. Our jobs board allows for job posting and sorting through coach profiles based on geographic region, sport and experience.</p>          
+            <p class="text-center"><a class="btn" href="http://www.coachatlas.com" alt="CoachAtlas.com">Visit Site</a></p>
+            </div>
+            <div class="span8">
+              <div class="macbook">
+                <div class="macbook-cover">
+                </div>
+                <div class="image-wrapper">
+                  <div id="macbook-carousel" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                      <div class="item"><img src="img/ishtar-alley.png" alt="Ishtar Alley"></div>
+                      <div class="item active"><img src="img/sintel-bedroom.png" alt="Sintel Bedroom"></div>
+                      <div class="item"><img src="img/sintel-town-concept.jpg" alt="Sintel Town"></div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control left" href="#macbook-carousel" data-slide="prev"><img src="img/left.png" style="height:60px; width:70px;"></a>
+                <a class="carousel-control right" href="#macbook-carousel" data-slide="next"><img src="img/right.png" style="height:60px; width:70px;"></a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="row">
+          <br>
+          <h2><u>What we do</u></h2><br>
+            <!-- Three columns of text below the carousel -->
+            <div class="span4">
+              <h3><i class="icon-check"></i> Heading</h3>
+              <p>bla bla bla</p>
+              <p class="text-center"><a class="btn" href="#">View details</a></p>
+            </div><!-- /.span4 -->
+            <div class="span4">
+              <h3><i class="icon-check"></i> Heading</h3>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p class="text-center"><a class="btn" href="#">View details</a></p>
+            </div><!-- /.span4 -->
+            <div class="span4">
+              <h3><i class="icon-check"></i> Heading</h3>
+              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p class="text-center"><a class="btn" href="#">View details</a></p>
+            </div><!-- /.span4 -->
+          </div>
+          
+          <hr>
+          
+          <div class="row">
+            <div class="span8 pull-right">
+              <div class="caption">
+                <h1>Big Buck Bunny</h1>
+              </div>
+              <br>
+              <p>The plot follows a day of the life of Big Buck Bunny when he meets three bullying rodents, Frank (the leader of the rodents), Rinky and Gamera. The rodents amuse themselves by harassing helpless creatures of the forest by throwing fruits, nuts and rocks at them.</p>
+              <p class="text-center"><a class="btn" href="#">Visit Site</a></p>
+            </div>
+            <div class="span4 pull-right">
+              <div class="iphone">
+                <div class="iphone-cover"></div>
+                <div class="image-wrapper">
+                  <div id="iphone-carousel" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                      <div class="item"><img src="img/big_buck_bunny_portrait.jpg" alt="Big Buck Bunny"></div>
+                      <div class="item active"><img src="img/big_buck_bunny_bird.jpg" alt="Big Buck Bunny Bird"></div>
+                      <div class="item"><img src="img/big_buck_bunny_rodent.jpg" alt="Big Buck Bunny Rodent"></div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control left" href="#iphone-carousel" data-slide="prev"><img src="img/left.png" style="height:60px; width:70px;"></a>
+                <a class="carousel-control right" href="#iphone-carousel" data-slide="next"><img src="img/right.png" style="height:60px; width:70px;" style="height:60px; width:70px;"></a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div id="team" class="block white">
+        <div class="container">
+          <div class="row">
+            <div class="span4">
+              <div class="caption">
+                <h1>Meet the Team</h1>
+              </div>
+              <div class="portrait-wrapper">
+                  <img src="img/peter.jpg" alt="Team Portrait" class="img-circle">              
+                <div class="social-media">
+                  <a href="http://www.facebook.com/peter.lowry.31"><img src="img/facebook.png"></a>
+                  <a href="http://www.twitter.com/peterlowry"><img src="img/twitter.png"></a>
+                  <a href="http://www.linkedin.com/profile/view?id=17883472&trk=nav_responsive_tab_profile"><img src="img/in.png"></a>
+                  
+                </div>
+                <p><a class="btn" href="#">Hire Me</a></p>
+              </div>
+
+            </div><!-- Span4 -->
+            <div class="span8">
+              <p class="lead">I am Peter Lowry, a web designer and developer who loves designing and building websites.
+              </p>
+              <p>Aliquam at aliquam sapien. Donec tempor tellus non neque ultricies, nec hendrerit erat accumsan. Vestibulum magna augue, condimentum in eleifend nec, tempus et erat. Nulla facilisi. Praesent interdum vel purus non cursus. Sed dapibus augue leo, nec mollis enim gravida rutrum. Praesent consequat tempor rutrum. Donec semper odio id mi consequat, eu sollicitudin justo fermentum.</p>
+              <p>Vestibulum fringilla id felis non luctus. Proin vitae mollis neque. Praesent sed cursus mi. Morbi ac erat diam. In hac habitasse platea dictumst. Aliquam nec magna rhoncus, pretium tortor vitae, porta sem. Mauris et nunc a arcu auctor commodo. Donec fringilla rhoncus odio in malesuada. Proin eget augue vestibulum, imperdiet dolor a, tincidunt magna. Aliquam vestibulum odio et venenatis eleifend. Duis ut interdum quam. Fusce eget molestie arcu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="block green">
+        <div class="container">
+          <div class="row">
+            <div class="span4 text-center">
+              <h1>Contact</h1>
+            </div>
+          </div>
+          <br><br>
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <form class="contact">
+              <div class="span4">            
+                <div class="control-group">
+                  <label class="control-label" for="inputName">Name</label>
+                  <div class="controls">
+                    <input type="text" id="inputName" placeholder="Name...">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="inputEmail">Email</label>
+                  <div class="controls">
+                    <input type="email" id="inputEmail" placeholder="Email...">
+                  </div>
+                </div>
+              </div><!-- /.span4 -->
+              <div class="span8 pull-right">
+                <div class="control-group">
+                  <label class="control-label" for="textareaMessage">Message</label>
+                  <textarea id="textareaMessage" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="span4">
+                <button type="submit" class="btn">Send Email</button>
+              </div>     
+            </form>
+          </div><!-- /.row -->
+          
+          <!-- FOOTER -->
+          <footer>
+            <div class="pull-left">© 2013 Lowdown Website Development. Made by <a href="http://webdesigncrowd.com/">Peter Lowry</a></div>        
+            <div class="pull-right"><a class="back-to-top" href="#">Back to top</a></div>
+          </footer>
+        </div>
+        
+      </div>
+    
+<%= yield %>
+      
+      <!-- Le javascript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/init.js"></script>
+    
+  </body>
+</html>
