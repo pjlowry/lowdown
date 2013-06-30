@@ -36,6 +36,7 @@
                 <ul class="nav pull-right" style="padding-right:90px;">
                   <li class="active"><a href="#home">Home</a></li>
                   <li class=""><a href="#work">Work</a></li>
+                  <li class=""><a href="#services">Services</a></li>
                   <li class=""><a href="#team">Team</a></li>
                   <li class=""><a href="#contact">Contact</a></li>
                   <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
@@ -56,7 +57,7 @@
       <div class="container landing">
         <h1 class="hidden-tablet hidden-phone" style="text-align:center;">Creative Website Development</h1><br>
         <h2 class="hidden-desktop" style="text-align:left;">Creative Website Development</h2>
-
+          <div class="hidden-phone">
             <div class="macbook" style="text-align:center;">
               <div class="macbook-cover" style="text-align:center;">
               </div>
@@ -76,6 +77,8 @@
             </div>
           </div>
         </div>
+      </div>
+
 
         <div class="slogan">
           <h3>Contact me<a class="scroll" href="#contact"> below </a></h3>
@@ -150,18 +153,72 @@
               <p>A custom wedding website built for a special weekend spent with family and friends celebrating a joyous marriage. </p>
               <p class="text-center"><a class="btn" href="http://www.lisaandaaron.com">Visit Site</a></p>
             </div>
-           
           </div>
+        </div>
+      </div>
 
-          <div class="container">
-          <br>
-          <h2><u>What we do</u></h2><br>
-            <!-- Three columns of text below the carousel -->
-          <div class="span6">
-            <h3><i class="icon-check"></i>Clean and Easy to Use</h3>
-            <h3><i class="icon-check"></i>Cutting Edge Design Techniques</h3>
-            <h3><i class="icon-check"></i>Mobile and Tablet Ready</h3>
-            <h3><i class="icon-check"></i>100% Custom Sites</h3><br>
+<!-- Services -->
+      <div id="services" class="block white">
+        <div class="container">
+          <div class="row">
+            <h1 style="padding-left:50px; padding-bottom:30px;"><u>Services</u></h1>
+            <div class="span3">
+              <div class="well">
+                <h2><u>Prototype</u></h2>
+                <h3 style="text-align:left;"><i class="icon-check"></i>Mock-Ups</h3>
+                <h3 style="text-align:left;"><i class="icon-check"></i>Agile Development</h3>
+                <h3 style="text-align:left;"><i class="icon-check"></i>Client Feedback</h3>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="well">
+                <h2><u>Design</u></h2>
+                <h3 style="text-align:left;"><i class="icon-check"></i>Cutting Edge Design</h3>
+                <h3 style="text-align:left;"><i class="icon-check"></i>HTML5/CSS3</h3>
+                <h3 style="text-align:left;"><i class="icon-check"></i>100% Custom Designs</h3>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="well">
+                <h2><u>Develop</u></h2>
+                <h3 style="text-align:left;"><i class="icon-check"></i>Clean and Easy to Use</h3>
+                <h3 style="text-align:left;"><i class="icon-check"></i>On-Time Delivery</h3>
+                <h3 style="text-align:left;"><i class="icon-check"></i>Often Under Budget</h3>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="well">
+                <h2><u>Deploy</u></h2>
+                <h3 style="text-align:left;"><i class="icon-check"></i>Scalable Technology</h3>
+                <h3 style="text-align:left;"><i class="icon-check"></i>Easy to Modify</h3>
+                <h3 style="text-align:left;"><i class="icon-check"></i>Fast and Effective</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block green">
+          <h1 style="padding-left:50px; padding-top:50px;"><u>Our Clients</u></h1><br>
+          <div class="container block green">
+            <div class="span3">
+              <div class="well">
+                <h3><a href="http://www.ousd.k12.ca.us/site/default.aspx?PageID=1"><img src="img/ousd.png"><br>Oakland Unified School District</a></h3>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="well">
+                <h3><a href="http://www.coachatlas.com"><img src="img/sphere.jpg"><br><br>Coachatlas.com</a></h3>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="well">
+                <h3><a href="http://www.lisaandaaron.com"><img src="img/us.png"><br><br>LisaandAaron.com</a></h3>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="well">
+                <h3><a href="http://www.tiffanylynnvargas.herokuapp.com"><img src="img/hair3.jpg"><br><br>TiffanyLynnVargas.com</a></h3>
+              </div>
             </div>
           </div>
         </div>
@@ -189,7 +246,7 @@
             <div class="span7" style ="padding-left:20px;">
               <p class="lead">I am Peter Lowry, a web designer and developer who loves designing and building websites.
               </p>
-              <p>I build web sites for small businesses, personal pages, blogs, weddings, event promotion and also do startup software development.</p>
+              <p>I build web sites for small businesses, personal websites and blogs, weddings, event promotion and also do startup software development.</p>
               <p> </p>
               <p>My goal is to give you the site of your dreams. From mock-ups to full-stack development I work with you until you have your perfect site.</p>
             </div>
@@ -222,7 +279,7 @@
                   </div>
                 </div>
               </div><!-- /.span4 -->
-              <div class="span7">
+              <div class="span6">
                 <div class="control-group">
                   <label class="control-label" for="textareaMessage">Message</label>
                   <textarea id="textareaMessage" rows="10"></textarea>

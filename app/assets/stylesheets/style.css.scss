@@ -158,7 +158,7 @@ form.contact textarea {
   top: 0;
   z-index: 1;
   background-color: #fff;
-  
+
 }
   .navbar-inverse {
     width: inherit;
@@ -315,6 +315,22 @@ form.contact textarea {
   .landing .slogan {
     padding-top:30%;
     color: #999;
+  }
+
+  /* Landing Responsive Sizes */
+  @media (max-width: 979px) {
+    .landing {
+      text-align:left;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @media (max-width: 768px) {
+    .landing {
+      text-align:left;
+      width: 250px;
+      height: 250px;
+    }
   }
   
   
