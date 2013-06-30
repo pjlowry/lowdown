@@ -11,7 +11,7 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
 </head>
-
+<div class="container">
   <body data-spy="scroll" data-target=".navbar-wrapper" data-offset="70">
 
       <!--                                Navbar                                  -->
@@ -33,7 +33,7 @@
               </button>
               <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
               <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
+                <ul class="nav pull-right" style="padding-right:30px;">
                   <li class="active"><a href="#home">Home</a></li>
                   <li class=""><a href="#work">Work</a></li>
                   <li class=""><a href="#team">Team</a></li>
@@ -142,7 +142,7 @@
                 <a class="carousel-control right" href="#iphone-carousel" data-slide="next"><img src="img/right.png" style="height:60px; width:70px;" style="height:60px; width:70px;"></a>
               </div>
             </div>
-            <div class="span8 pull-right">
+            <div class="span8">
               <div class="caption">
                 <h2><a href="http://www.lisaandaaron.com" alt="Lisa and Aaron Wedding Website">LisaandAaron.com</a></h2>
               </div>
@@ -244,7 +244,7 @@
       </div>
     
 <%= yield %>
-      
+</div>      
       <!-- Le javascript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
