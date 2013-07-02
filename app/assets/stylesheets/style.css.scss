@@ -76,6 +76,7 @@ a[class^="icon-"], a[class*=" icon-"] {
   padding: 10px 20px 5px 20px;
   font-size: 20px;
   line-height: 35px;
+  max-width:100px;
   border-radius: 0;
   text-shadow: none;
   box-shadow: none;  
@@ -87,6 +88,7 @@ a[class^="icon-"], a[class*=" icon-"] {
   transition: .2s;
   
 }
+
   .btn:hover {    
     -webkit-transition: .15s;
     transition: .15s;
@@ -123,6 +125,8 @@ form [class*="span"] {
   }
 .container textarea {
   box-sizing:border-box;
+  rows: 10;
+  min-width: 450px;
    -moz-box-sizing:border-box;
    -webkit-box-sizing:border-box;
    
@@ -148,6 +152,8 @@ form.contact textarea {
 form.contact textarea {
   height: 219px;
 }
+
+
 
 /*---------------------------------*/
 /* NAVBAR: Transparent white space */
