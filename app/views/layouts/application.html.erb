@@ -11,7 +11,7 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
 </head>
-  <body data-spy="scroll" data-target=".navbar-wrapper" data-offset="70">
+  <body>
 
       <!--                                Navbar                                  -->
       <!-- ====================================================================== -->
@@ -33,7 +33,7 @@
               <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right" style="padding-right:90px;">
-                  <li class="active"><a href="#home">Home</a></li>
+                  <li class=""><a href="#home">Home</a></li>
                   <li class=""><a href="#work">Work</a></li>
                   <li class=""><a href="#services">Services</a></li>
                   <li class=""><a href="#team">Team</a></li>
@@ -54,15 +54,11 @@
         </div> <!-- /.container -->
       </div><!-- /.navbar-wrapper -->
       
+   <%= yield %>       
           
-          <!-- FOOTER -->
-          <footer>
-            <div class="pull-left">© 2012 Lowdown Website Development. Made by <a href="http://webdesigncrowd.com/">Peter Lowry</a></div>        
-            <div class="pull-right" style="padding-right:120px;"><a class="back-to-top" href="#">Back to top</a></div>
-          </footer>
         
     
-<%= yield %>
+
       
       <!-- Le javascript
       ================================================== -->

@@ -1,7 +1,6 @@
 Lowdown::Application.routes.draw do
-  root :to => "contact#new", :as => "Home"
+  root :to => "home#index", :as => "Home"
 
-  resources :contacts
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
